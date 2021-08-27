@@ -1,0 +1,23 @@
+{
+  "name": "docker-and-kubernates",
+  "version": "1.0.0",
+  "description": "> Setup kubernates infrastructure for node js app via manikube",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakoemmy/docker-and-kubernates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hakoemmy/docker-and-kubernates/issues"
+  },
+  "homepage": "https://github.com/hakoemmy/docker-and-kubernates#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
