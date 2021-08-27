@@ -1,2 +1,2 @@
 # docker-and-kubernates
-> Setup kubernates infrastructure for node js app via manikube
+> Setup kubernates infrastructure for node js app via mnikube
