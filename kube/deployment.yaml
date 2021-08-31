@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: docker-and-kubernetes
+spec:
+  selector:
+    app: docker-and-kubernetes
+  ports:
+    - port: 80
+      targetPort: 3000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-and-kubernetes
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: docker-and-kubernetes
+  template:
+    metadata:
+      labels:
+        app: docker-and-kubernetes
+    spec:
+      containers:
+        - name: docker-and-kubernetes
+          image: hakoemmy/docker-and-kubernates
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
